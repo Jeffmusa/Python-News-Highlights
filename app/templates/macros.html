@@ -1,0 +1,7 @@
+{% macro displaySourceList(news_list) %}
+
+    {% for new in news_list %}
+        <li>{{ new.name}}</li>
+    {% endfor %}
+
+{% endmacro %}
