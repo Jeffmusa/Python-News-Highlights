@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> Welcome to the best News Site </title>
+        {% endif %}
+    </head>
+    <body>
+    <H1>SOURCE LIST</H1>
+    <ul>
+        {% for new in news %}
+            <li>{{ new.source}}</li>
+        {% endfor %}
+    </ul>
+    </body>
+</html>
