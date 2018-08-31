@@ -8,14 +8,12 @@
         <title> Welcome to the best News Site </title>
         {% endif %}
     </head>
-    {% import 'macros.html' as macro%}
     <body>
     <H1>SOURCE LIST</H1>
-    {{ macro.displaySourceList(source)}}
-    <!-- <ul>
+    <ul>
         {% for new in news %}
             <li><h3>{{ new.source}}</h3></li>
         {% endfor %}
-    </ul> -->
+    </ul>
     </body>
 </html>
