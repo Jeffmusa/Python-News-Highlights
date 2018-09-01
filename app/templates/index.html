@@ -12,7 +12,10 @@
     {% import 'macros.html' as macro%}
     <body>
             {% block content %}
-    <H1>SOURCES</H1>
+            <div class="jumbotron">
+    <h3 style="text-align:center;">WELCOME TO BEST NEWS SOURCES ONLINE.FOR ALL THE NEWS SOURCES IN ONE PLACE.</h3>
+    <p style="text-align:center;">Select your favourite news source and view the top-headlines.</p>
+</div>
     <ul>
             {{ macro.displaySourceList(news) }}
     </ul>
