@@ -1,4 +1,11 @@
 {% extends 'base.html'%}
 {% block content %}
-<h1>NEWS TIME {{ id }}</h1>
+<ul>
+    {% for article in articles %}
+    <li>{{ article.author}}</li>
+    {% endfor %}
+</ul>
+
+
+
 {% endblock %}

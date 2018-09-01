@@ -2,7 +2,10 @@
 
     {% for new in news_list %}
          <h3>{{ new.source}}</h3>
-         <a  href="/news/">NEWS</a>
+         <a  href="/news/{{new.id}}">NEWS</a>
     {% endfor %}
 
 {% endmacro %}
+
+
+
