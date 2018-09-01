@@ -8,8 +8,10 @@
         <title> Welcome to the best News Site </title>
         {% endif %}
     </head>
+    {% extends 'base.html'%}
     {% import 'macros.html' as macro%}
     <body>
+            {% block content %}
         <div class="row">
             <div class="col md-4">
     <H1>SOURCES</H1>
@@ -21,5 +23,6 @@
     <H1>HEADLINES</H1>
 </div>
 </div>
+{% endblock%}
     </body>
 </html>
