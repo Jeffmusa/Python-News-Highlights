@@ -4,6 +4,7 @@ from .models import news
 
 News = news.News
 Articles = news.Articles
+
 # Getting api key
 api_key = app.config['NEWS_API_KEY']
 

@@ -8,9 +8,13 @@
 {% endmacro %}
 
 {% macro displayArticlesList(articles_list) %}
-
+<div class="row">
     {% for article in articles_list %}
-        <h3>{{ article.title}}</h3>
+    
+        <div class="col-md-4">
+        <h3>{{ article.time}}</h3>
+    </div>
+    </div>
     {% endfor %}
 
 {% endmacro %}

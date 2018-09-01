@@ -1,4 +1,5 @@
 {
     "python.pythonPath": "${workspaceFolder}/virtual/bin/python",
-    "python.linting.enabled": false
+    "python.linting.enabled": false,
+    "python.formatting.provider": "black"
 }
