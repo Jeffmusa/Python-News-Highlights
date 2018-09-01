@@ -3,13 +3,14 @@ import urllib.request,json
 from .models import news
 
 News = news.News
-
+Articles = news.Articles
 # Getting api key
 api_key = app.config['NEWS_API_KEY']
 
 #Getting base url
 base_url = app.config["NEWS_API_SOURCES_URL"]
 
+articles_url = app.config["HEADLINES_URL"]
 
 def get_news():
     '''
@@ -64,13 +65,13 @@ def get_articles(id):
     with urllib.request.urlopen(get_articles_url) as url:
         get_articles_data = url.read()
         get_articles_response = json.loads(get_articles_data)
-
+        print(get_articles_response)
         articles_results = None
 
 
-        if get_articles_response['articles']:
-            articles_results_list = get_articles_response['articles']
-            articles_results = process_results(articles_results_list)
+        if get_articles_response["articles"]:
+            articles_results_list = get_articles_response["articles"]
+            articles_results = process_articles(articles_results_list)
 
 
     return articles_results

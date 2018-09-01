@@ -1,11 +1,18 @@
 {% macro displaySourceList(news_list) %}
 
     {% for new in news_list %}
-         <h3>{{ new.source}}</h3>
-         <a  href="/news/{{new.id}}">NEWS</a>
+        <h3>{{ new.source}}</h3>
+        <a href="/news/{{new.id}}">news</a>
     {% endfor %}
 
 {% endmacro %}
 
+{% macro displayArticlesList(articles_list) %}
+
+    {% for article in articles_list %}
+        <h3>{{ article.title}}</h3>
+    {% endfor %}
+
+{% endmacro %}
 
 
