@@ -1,5 +1,5 @@
 import unittest
-from news import News
+from app.models import News,Articles
 
 
 class NewsTest(unittest.TestCase):
@@ -17,5 +17,5 @@ class NewsTest(unittest.TestCase):
         self.assertTrue(isinstance(self.news,News))
 
 
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     unittest.main()
