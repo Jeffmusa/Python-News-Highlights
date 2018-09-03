@@ -20,8 +20,8 @@
 <div class="row">
     {% for article in articles_list %}
     
-        <div class="col-md-4">
-            <div class="card" style="padding:10px;">
+        <div class="col-md-3">
+            <div class="thumbnail" style="padding:10px;">
                 <div class="card-header-default">
                     
                 </div>
@@ -32,13 +32,13 @@
                 <hr>
                 <div class="card-footer-default">
            <b><small class="text-muted">Published at: {{ article.time}}</small></b>
-           <br>            
+                      
         </div>
     </div>
 </div>
     </div>
     {% endfor %}
-
+    
 {% endmacro %}
 
 

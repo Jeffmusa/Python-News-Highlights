@@ -80,7 +80,7 @@ def get_articles(id):
     with urllib.request.urlopen(get_articles_url) as url:
         get_articles_data = url.read()
         get_articles_response = json.loads(get_articles_data)
-        print(get_articles_response)
+        
         articles_results = None
 
 
@@ -94,15 +94,7 @@ def get_articles(id):
 
 
 def process_articles(articles_list):
-    '''
-    Function  that processes the news result and transform them to a list of Objects
-
-    Args:
-        news_list: A list of dictionaries that contain news details
-
-    Returns :
-        news_results: A list of news objects
-    '''
+   
     articles_results = []
     for articles_item in articles_list:
         author = articles_item.get('author')
