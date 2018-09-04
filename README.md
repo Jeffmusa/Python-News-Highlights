@@ -7,6 +7,8 @@
 ## Description
 Python-News-Highlights is a Python news application which brings you all the news sources World wide and the top headlines. Clicking on the link provided under the news source will lead the user to the articles of the source. It achieves this by using the [News API](https://newsapi.org/).
 
+
+## Live site
 You can view the site at: [Jeff News Highlights](https://jeffmusa.herokuapp.com/).
 
 ## User Stories
