@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best News Site </title>
-        {% endif %}
-    </head>
-    {% extends 'base.html'%}
-    {% import 'macros.html' as macro%}
-    <body>
-            {% block content %}
-    
-            <div class="jumbotron" style="background-color:aqua;"> 
-    <h3 style="text-align:center;">WELCOME TO BEST NEWS SOURCES ONLINE.FOR ALL THE NEWS SOURCES IN ONE PLACE.</h3>
-    <p style="text-align:center;">Select your favourite news source and view the top-headlines.</p>
-</div>
+
+<head>
+    <meta charset="utf-8"> {% if title %}
+    <title> {{ title }}</title>
+    {% else %}
+    <title> Welcome to the best News Site </title>
+    {% endif %}
+</head>
+{% extends 'base.html'%} {% import 'macros.html' as macro%}
+
+<body>
+    {% block content %}
+
+    <div class="jumbotron" style="background-color:aqua;">
+        <h3 style="text-align:center;">WELCOME TO BEST NEWS SOURCES ONLINE.FOR ALL THE NEWS SOURCES IN ONE PLACE.</h3>
+        <p style="text-align:center;">Select your favourite news source and view the top-headlines.</p>
+    </div>
     <ul>
-            {{ macro.displaySourceList(news) }}
+        {{ macro.displaySourceList(news) }}
     </ul>
-{% endblock%}
-    </body>
+    {% endblock%}
+</body>
+
 </html>
