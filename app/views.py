@@ -20,8 +20,5 @@ def index():
 @app.route('/news/<id>')
 def news(id):
 
-    '''
-    View news page function that returns the news details page and its data
-    '''
     final_articles = get_articles(id)
     return render_template('news.html',final_articles = final_articles )    
