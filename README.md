@@ -28,7 +28,6 @@ As a user I would like to:
 | Read an entire article | **Click an article** | Redirected to the the entire article |
 
 ## SetUp / Installation Requirements
-### Prerequisites
 * python3.6
 * pip
 * virtualenv
