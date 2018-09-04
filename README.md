@@ -23,7 +23,7 @@ As a user I would like to:
 | Display news sources | **On page load** | List of various news sources is displayed on landing page |
 | Display articles from a news source | **View articles** | Redirected to a page with a list of articles from the source |
 | Display the preview of an article | **On page load** | Each article displays an image, title, description and publication date |
-| Read an entire article | **Click an article** | Redirected to the news source's site to read the entire article |
+| Read an entire article | **Click an article** | Redirected to the the entire article |
 
 ## SetUp / Installation Requirements
 ### Prerequisites
@@ -34,15 +34,15 @@ As a user I would like to:
 ### Cloning
 * In your terminal:
         
-        $ git clone https://github.com/marynganga/Sirius-News-Highlights/
-        $ cd Sirius-News-Highlights
+        $ git clone https://github.com/Jeffmusa/Python-News-Highlights.git
+        $ cd Python-News-Highlights
 
 ## Running the Application
 * Creating the virtual environment
 
         $ python3.6 -m venv --without-pip virtual
         $ source virtual/bin/env
-        $ curl https://bootstrap.pypa.io/get-pip.py | python 
+         
         
 * Installing Flask and other Modules
 
@@ -78,4 +78,4 @@ As a user I would like to:
 * Flask
 
 ## License
-MIT &copy;2017 [Mary Ng'ang'a](https://github.com/marynganga/)
+MIT &copy;2018 [Jeff Musa](https://github.com/jeffmusa/)
