@@ -1,6 +1,8 @@
 # Python-News-Highlights
 
-## Built By [Mary Ng'ang'a](https://github.com/jeffmusa/)
+## Built By [Jeff Musa](https://github.com/jeffmusa/)
+
+## On 31st Aug 2018
 
 ## Description
 Python-News-Highlights is a Python news application which brings you all the news sources World wide and the top headlines. Clicking on the link provided under the news source will lead the user to the articles of the source. It achieves this by using the [News API](https://newsapi.org/).
