@@ -5,23 +5,23 @@
 ## Description
 Python-News-Highlights is a Python news application which brings you all the news sources World wide and the top headlines. Clicking on the link provided under the news source will lead the user to the articles of the source. It achieves this by using the [News API](https://newsapi.org/).
 
-You can view the site at: https://sirius-news-highlights.herokuapp.com/
+You can view the site at: [Jeff News Highlights](https://jeffmusa.herokuapp.com/).
 
 ## User Stories
-These are the behaviours/features that the application implements for use by a user.
+These are the behaviours that the application implements to be used by a user.
 
 As a user I would like to:
 * See various news sources 
 * Select the ones they prefer
-* See the top news articles from that news source
+* See the top-headlines of the articles from that news source
 * See the image, description and time the news article was created
 * Click on an article and read it fully from the news source
 
 ## Specifications
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
-| Display news sources | **On page load** | List of various news sources is displayed per category |
-| Display articles from a news source | **Click a news source** | Redirected to a page with a list of articles from the source |
+| Display news sources | **On page load** | List of various news sources is displayed on landing page |
+| Display articles from a news source | **View articles** | Redirected to a page with a list of articles from the source |
 | Display the preview of an article | **On page load** | Each article displays an image, title, description and publication date |
 | Read an entire article | **Click an article** | Redirected to the news source's site to read the entire article |
 
