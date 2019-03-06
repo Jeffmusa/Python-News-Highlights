@@ -1,17 +1,7 @@
-class News:
-    def __init__(self,source,link,country,id,description):
-        self.source = source
-        self.link = link
-        self.country = country
-        self.id = id
-        self.description = description
+class Rover:
+    def __init__(self,photo,name,date):
+        self.photo = photo
+        self.name = name
+        self.date = date
+       
 
-
-class Articles:
-    def __init__(self,author,title,description,url,poster,time):
-        self.author = author
-        self.title = title
-        self.description = description
-        self.url = url
-        self.poster = poster
-        self.time = time 

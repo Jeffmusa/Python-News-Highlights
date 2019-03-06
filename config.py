@@ -5,11 +5,10 @@ class Config:
     General config class
     '''
 
-    NEWS_API_SOURCES_URL ='https://newsapi.org/v2/sources?language=en&apiKey={}'
+    ROVER_API_SOURCES_URL ='https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1337&api_key={}'
 
-    HEADLINES_URL = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
 
-    NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
+    ROVER_API_KEY = os.environ.get('ROVER_API_KEY')
     SECRET_KEY = os.environ.get('SECRET_KEY')
     
 

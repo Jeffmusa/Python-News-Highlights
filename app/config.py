@@ -3,9 +3,8 @@ class Config:
     General config class
     '''
 
-    NEWS_API_SOURCES_URL ='https://newsapi.org/v2/sources?language=en&apiKey={}'
-
-    HEADLINES_URL = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
+    ROVER_API_SOURCES_URL ='https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1337&api_key={}'
+                            
     pass
 
 class ProdConfig(Config):

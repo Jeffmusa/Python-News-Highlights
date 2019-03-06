@@ -1,40 +1,8 @@
-{% macro displaySourceList(news_list) %}
+{% macro displaySourceList(photos_list) %}
 <div class="row">
-    {% for new in news_list %}
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <div class="card-header" style="background-color:#EDEDEE; padding:6px; ">
-                <h3 style="text-align:center;">{{ new.source}}</h3>
-            </div>
-            <h6><b>{{ new.description }}</b></h6>
-            <hr>
-            <a href="/news/{{new.id}}"><button style="color:black;background-color:aqua">view</button></a>
-        </div>
-    </div>
+    {% for photo in photos_list %}
+ <h1>{{photo.id}}</h1>
 
     {% endfor %}
 </div>
-{% endmacro %} {% macro displayArticlesList(articles_list) %}
-<div class="row">
-    {% for article in articles_list %}
-
-    <div class="col-md-3">
-        <div class="thumbnail" style="padding:10px;">
-            <div class="card-header-default">
-
-            </div>
-            <img src="{{ article.poster }}" alt="{{ article.title }} poster" class="img-responsive">
-            <b><h3>{{article.title}}</h3></b>
-            <p>
-                <article>{{ article.description }}</article>
-            </p>
-            <p><a href="{{article.url}}">View full article...</a></p>
-            <hr>
-            <div class="card-footer-default">
-                <b><small class="text-muted">Published at: {{ article.time}}</small></b>
-
-            </div>
-        </div>
-    </div>
-</div>
-{% endfor %} {% endmacro %}
+{% endmacro %} 
